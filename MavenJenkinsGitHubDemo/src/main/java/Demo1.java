@@ -1,8 +1,11 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Demo1 {
-	public static void main(String[] args) {
+	@Test
+	public void demotest()
+	{
 		System.setProperty("webdriver.chrome.driver", "F:\\Win10 Setups\\chromedriver.exe");
 		WebDriver d=new ChromeDriver();
 		d.get("http://www.facebook.com");
